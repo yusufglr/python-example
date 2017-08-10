@@ -65,8 +65,8 @@ class MainWindow(QMainWindow):
 
     # SLOT: This function will receive the single value passed from the signal
     def my_custom_fn(self, a):
-        print(self.sender().text())
-        print(self.sender().isChecked())
+        print("Name",self.sender().text())
+        print("State",self.sender().isChecked())
 
 app = QApplication(sys.argv)
 
